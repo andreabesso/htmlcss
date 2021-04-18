@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    font-family:'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+h1, h3{
+    text-align: center;
+    color:#4d73fa;
+}
+h3{
+    margin: 50px;
+}
+a{
+    color: white;
+    text-decoration: none
+}
+.link{
+    color:#4d73fa;
+}
+.fotoProfilo{
+    width: 20%; 
+    border-radius: 100px; 
+    border:5px solid #4d73fa;
+    float:right;
+}
+
+.imgresponsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: solid #4d73fa 2px;
+}
+.tabcv{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.cv p{
+    text-align: left;
+}
+p{
+    text-align: center;
+}
+
+
+/*  versione PC sopra i 500px di larghezza */
+@media only screen and (min-width: 500px) {
+    h1{
+        margin:  50px;
+    }
+    .cv {
+        margin: 0 auto;
+        padding: 20px;
+        width: 60%;
+        background-color: #dfe8ed;
+        height: 100%;
+    }
+    footer{
+        margin-top:30px;
+        background-color: black;
+        color:white;
+        text-align: center;
+        padding: 25px;    
+
+    }
+    .fcontatti{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 50px 0px;
+        background-color: #4d73fa;
+        color:white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    #nome,#cognome,#mail,#btnsend{
+        text-align: left;
+        max-width: 75%;
+        height: 30px;
+    }
+    .tabcontatti{
+        display:flex;
+        justify-content: center; 
+        text-align: center;
+        margin-top: 30px;
+        padding: 30px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-container > a {
+        background-color: #4d73fa;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        flex: 25%;
+        max-width: 25%;
+        box-sizing: border-box;
+        padding: 0 4px;
+        border:20px solid;
+        border-radius: 100px;
+    }
+    .column {
+        margin: 8px auto;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    .up {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .sx {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #4d73fa;
+        color:white;
+        max-height: 500px;
+    }
+    .dx {
+        width: 75%;
+        float: left;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+/*  versione MOBILE sotto i 500px di larghezza */
+@media only screen and (max-width: 500px) {
+    h1,h3{
+        margin:  25px;
+    }
+    footer{
+        margin-top:30px;
+        background-color: black;
+        color:white;
+        text-align: center;
+        padding: 25px;    
+    }
+    .cv {
+        margin: 0 auto;
+        padding: 20px;
+        width: 90%;
+        background-color: white;
+        height: 100%;
+    }
+    #columnc {
+        flex: 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        padding: 0 4px;
+        border:5px solid white;
+        border-radius: 100px;
+    }
+    .tabcontatti{
+        padding: 30px;
+    }
+    .fcontatti{
+        padding-top: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #nome,#cognome,#mail,#pv, #msg, #btnsend{
+        max-width: 85%;
+        border: solid 4px #4d73fa;
+        font-size: 30px;
+    }
+    label, .fcontatti p{
+        font-size: 30px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-container > a {
+        background-color: #4d73fa;
+        width: 80%;
+        margin: 5px 0 auto;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border-radius: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    label{
+        border: none;
+    }
+    .column {
+        margin: 8px auto;
+        flex: 75%;
+        max-width: 75%;
+        padding: 0 4px;
+    }
+    .sx p{
+        background-color: #4d73fa;
+        color:white;
+        padding: 10px;
+        margin: 0px 20px auto;
+    }
+}
+

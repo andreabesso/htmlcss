@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Andrea Besso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ab.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Andrea Besso</h1>
+        </header>
+        <div id="menumobile" class="menumobile">
+            <div class="openHamburger" onclick="openHamburger()">&#9776;</div>
+            <div id="mnav" class="mnav">
+                <a href="javascript:void(0)" class="closeHamburger" onclick="closeHamburger()">&times;</a>
+                <div class="nav-content">
+                    <a style="font-weight: bold;" href="index.html">HOME</a>
+                    <a href="contatti.html">Contatti</a>
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <h1>Contatti</h1>
+        <div  class="tabcontatti">
+            <table>
+                <tr><th>Recapiti</th></tr>
+                <tr><td>Telefono: 800 90 96 90</td></tr>
+                <tr><td>Mail: andreabesso@gmail.com</td></tr>
+                <tr><td>Indirizzo: via Pietro Ferrero 19, 12051 Alba (CN) - Italy</td></tr> 
+            </table>
+        </div>
+        <div class="flex-container">
+            <a href="https://www.facebook.com/andrea.besso.988">Facebook</a>
+            <a href="https://www.instagram.com/andreabesso__/">Instagram</a>
+            <a href="https://github.com/andreabesso?tab=repositories/">GitHub</a>
+            <a href="https://www.linkedin.com/in/andreabesso">LinkedIn</a>
+        </div>
+        <div>
+            <form id="fcontatti" class="fcontatti" action="/action_page.php">
+                <label for='cognome'>Nome:</label><br>
+                <input type='text' id="cognome" name='cognome' placeholder='Inserisci cognome'
+                       size='50' maxlength="60" required><br><br>
+                <label for='cognome'>Cognome:</label><br>
+                <input type='text' id="nome" name='nome'  placeholder='Inserisci nome'
+                       size='50' maxlength="120" required><br><br>
+                <label for='cognome'>Mail:</label><br>
+                <input type='text' id="mail" name='mail'  placeholder='Inserisci mail'
+                       size='50' maxlength="120" required><br><br>
+                <label for='cognome'>Messaggio:</label><br>
+                <textarea id="msg" name="msg" placeholder="Inserisci messaggio" rows="4" cols="52"></textarea><br><br>
+                <p>Motivo del contatto:</p>
+                <select id="pv" name="pv" size="3">
+                    <option>Collaborazione</option>
+                    <option  selected>Assunzione</option>
+                    <option>Consulenza</option>
+                </select>
+                <br><br>
+                <input id="btnsend" onclick="invia();" type="button" value="Invia">
+            </form>
+        </div>
+        <footer>
+            <div>
+                Sede Ufficio:<br>
+                via Pietro Ferrero 19, 12051 Alba (CN) - Italy<br>
+                Tel: 800 90 96 90<br>
+                P.IVA 03629090048<br></div>
+            <br>
+            <div>Copyright 1999-2021 by Refsnes Data. All Rights Reserved.
+                W3Schools is Powered by W3.CSS.
+            </div>
+        </footer>
+    </body>
+</html>
